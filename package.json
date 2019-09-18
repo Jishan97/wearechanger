@@ -1,0 +1,31 @@
+{
+  "name": "wearechanger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+  "node":"8.11.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alert-node": "^2.0.0",
+    "async": "^3.1.0",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-flash-message": "^1.0.5",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.2",
+    "json2xls": "^0.1.2",
+    "mongoose": "^5.6.11",
+    "nodemailer": "^6.3.0",
+    "nodemon": "^1.19.1",
+    "popups": "^1.1.3"
+  }
+}
