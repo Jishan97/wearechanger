@@ -382,13 +382,13 @@ else{
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: email,
         subject: 'We are changers',
         text: msg[0]
@@ -774,13 +774,13 @@ app.post('/accepttheuser',async(req,res)=>{
      var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: user,
         subject: 'We are changers',
         text: realMsg[0]
@@ -832,13 +832,13 @@ app.post('/rejecttheusers',async(req,res)=>{
      var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: user,
         subject: 'We are changers',
         text: realMsg[0]
@@ -911,13 +911,13 @@ app.post('/sendingEmail',(req,res)=>{
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: email,
         subject: 'We are changers',
         text: msg
@@ -950,13 +950,13 @@ app.post('/sendingEmailCopy',(req,res)=>{
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: email,
         subject: 'We are changers',
         text: msg
@@ -1030,13 +1030,13 @@ app.post('/deleteMeeting', (req, res) => {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: email,
         subject: 'We are changers',
         text: msg
@@ -1066,13 +1066,13 @@ app.post('/sendingEmailOldMeetings',(req,res)=>{
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: email,
         subject: 'We are changers',
         text: msg
@@ -1104,13 +1104,13 @@ app.post('/sendingEmailDissapproval',(req,res)=>{
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: email,
         subject: 'We are changers',
         text: msg
@@ -1141,13 +1141,13 @@ app.post('/sendingEmailApproval',(req,res)=>{
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'anant.patel8790@gmail.com',
-          pass: 'anantpatel123'
+          user: 'wearechanger@gmail.com',
+          pass: '7404225687Dd'
         }
       });
       
       var mailOptions = {
-        from: 'anant.patel8790@gmail.com',
+        from: 'wearechanger@gmail.com',
         to: email,
         subject: 'We are changers',
         text: msg
