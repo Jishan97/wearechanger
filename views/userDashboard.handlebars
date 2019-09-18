@@ -32,7 +32,7 @@
    <a class="navbar-brand" href="/userDashboard">
     <img src="http://res.cloudinary.com/jishan/image/upload/c_scale,w_1200/v1568698568/logo_transparent.png" alt="Logo" style="width:40px;">
   </a>
-   <span class="navbar-text">
+   <span style="color:white" class="navbar-text">
     We are changer
   </span>
    
@@ -46,6 +46,9 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            {{#each data}}
+          <p style="color:black">your referred link is <span style="color:tomato"> https://ancient-forest-89719.herokuapp.com/resgistrationP/{{username}} </span></p>
+          {{/each}}
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"  data-toggle="modal" data-target="#myModal"><i class="fas  fa-sm text-white-50"></i> Edit your profile</a>
           </div>
 

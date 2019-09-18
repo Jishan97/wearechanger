@@ -287,7 +287,16 @@ const update = { education,profession,experince,date,question };
 
 
 
-
+app.get('/logout',(req,res)=>{
+    req.session.destroy(function(err) {
+        if(err) {
+            console.log(err);
+        }
+        console.log('sucessfully logout');
+    
+        res.redirect('/adminP')
+      })
+})
 
 
 
@@ -1000,19 +1009,19 @@ app.get('/all',(req,res)=>{
 
 
 
-app.post('/deleteMeeting', (req, res) => {
+app.post('/deleteMeetingFromDiss', (req, res) => {
     // var id = req.body.id;
 
     const user = req.body.id;
     console.log(user);
   
     const filter = { email: user };
-    const update = { accepted:'completed' };
+    const update = { accepted:'deleted' };
     
     // `doc` is the document _before_ `update` was applied
      User.findOneAndUpdate(filter, update).then((result)=>{
          console.log(result)
-         res.redirect('/pendingU')
+         res.redirect('/rejectedU')
      })
     
 

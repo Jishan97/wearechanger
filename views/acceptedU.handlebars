@@ -226,10 +226,15 @@
            <li class="nav-item">
         <a class="nav-link" href="changeP">
           <i class="fas fa-fw fa-table"></i>
-          <span>Check Password </span></a>
+          <span>Change Password </span></a>
       </li>
 
 {{/ifeq}}
+ <li class="nav-item">
+        <a class="nav-link" href="logout">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Logout </span></a>
+      </li>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -270,17 +275,9 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{session_n}}</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-              
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
+           
             </li>
 
           </ul>
@@ -318,7 +315,7 @@
 
    <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">New Users</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Approved Users</h6>
             </div>
             <div class="card-body">
 
@@ -332,7 +329,8 @@
                       <th>Email</th>
                       <th>Username</th>
                        <th>Mobile</th>
-                      <th>date</th>
+                      <th>Date</th>
+                       <th>Action</th>
                     
                     </tr>
                   </thead>
@@ -343,18 +341,32 @@
                       
                          <td>    
                            <input class="option-input checkbox" onmouseover="if (!this.checked) { this.checked = true; } else { this.checked = false; }" type="checkbox"  name="checked" value="{{email}}" id="">
-                      
+                        </form>
                       
                        </td>
                       <td>{{email}}</td>
                       <td>{{username}}</td>
                        <td>{{mobile}}</td>
                       <td>{{date}}</td>
+                      <td>
+                                                    <div style="display:flex">            
+ <form method="post" style="margin:5px" action="/rejecttheusers">
+           <input type="hidden" name="id" value="{{email}}">
+  <button class="btn btn-info" type="submit">Dissaprove</button>
+            </form>
+
+            <form method="post" style="margin:5px" action="/deleteMeetingFromDiss">
+           <input type="hidden" name="id" value="{{email}}">
+  <button class="btn btn-danger" type="submit">Delete</button>
+            </form>
+</div>
+                     </td>
+                      </td>
                      
                      
                     </tr>
                          {{/each}}
-                         </form>
+                       
                   </tbody>
                 </table>
               </div>
