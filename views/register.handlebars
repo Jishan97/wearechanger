@@ -131,7 +131,7 @@ margin-left: 4px;
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
 						<input name="username" type="text" class="form-control" placeholder="username">
-						<input name="refer" type="hidden" value="{{para}}" class="form-control" placeholder="username">
+						<input name="refer" type="hidden" value="{{para}}" class="form-control" placeholder="username" required>
 						
 					</div>
 
@@ -139,7 +139,7 @@ margin-left: 4px;
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input name="mobile" type="text" class="form-control" placeholder="mobile number">
+						<input name="mobile" type="text" class="form-control" placeholder="mobile number" required>
 						
 					</div>
 
@@ -148,7 +148,7 @@ margin-left: 4px;
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
 						{{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-						  <select class="form-control" name="gender" id="sel1" placeholder="age">
+						  <select class="form-control" name="gender" id="sel1" placeholder="age" required>
     <option>Gender</option>
     <option>Male</option>
     <option>Female</option>
@@ -162,7 +162,7 @@ margin-left: 4px;
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
 						{{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-						  <select class="form-control" name="age" id="year">
+						  <select class="form-control" name="age" id="year" required>
     <option>Age</option>
    <script>
 	   var year = 10;
@@ -181,7 +181,7 @@ document.getElementById("year").innerHTML = options;
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
 						{{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-						  <select class="form-control" name="state" id="sel1">
+						  <select class="form-control" name="state" id="sel1" required>
      <option selected="selected">-Select State-</option>
    <option value="Andhra Pradesh">Andhra Pradesh</option>
 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -231,7 +231,7 @@ document.getElementById("year").innerHTML = options;
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
 						
-						 <select class="form-control" name="city" id="sel1">
+						 <select class="form-control" name="city" id="sel1" required>
 							 <option selected="selected">-Select City-</option>
 <option disabled="disabled" style="background-color:#3E3E3E"><font color="#000000"><i>-Top Metropolitan Cities-</i></font></option>
 <option>Ahmedabad</option>
@@ -474,21 +474,21 @@ document.getElementById("year").innerHTML = options;
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input name="email" type="text" class="form-control" placeholder="email">
+						<input name="email" type="text" class="form-control" placeholder="email" pattern="+@.com" required>
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input name="password" type="password" class="form-control" placeholder="password">
+						<input name="password" type="password" class="form-control" placeholder="password" required>
 					</div>
 
 		<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" name="password2" class="form-control" placeholder="confirm password">
+						<input type="password" name="password2" class="form-control" placeholder="confirm password" required>
 					</div>
 
 
