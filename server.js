@@ -279,10 +279,16 @@ const update = { education,profession,experince,date,question };
      console.log(email)
 
      const data = await User.find({email})
+     if(req.session.session_name) {
      res.render('trialDashboard',{
          data
      })
- })
+    }
+    else{
+        res.redirect('/')
+    }
+    })
+
 
 
 
@@ -445,16 +451,17 @@ data2.map((one)=>{
         filteredD.push(one)
     }
 })
-
-
-
-
-    console.log(req.session.session_name)
+   if( req.session.session_name) {
+     console.log(req.session.session_name)
     console.log(filteredD)
     res.render('userDashboard',{
         name,filteredD,data
 
     })
+}
+else{
+    res.redirect('/')
+}
 })
 
 
@@ -568,6 +575,7 @@ console.log(email)
 
 
 app.post('/register/:refer',(req,res)=>{
+    req.session.session_name=req.body.email;
     const refer = req.params.refer;
     const name = req.body.username;
     const pass = req.body.password;

@@ -46,7 +46,8 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"  data-toggle="modal" data-target="#myModal"><i class="fas  fa-sm text-white-50"></i> Edit your profile</a>
+            <button class="btn btn-info text-center" data-toggle="modal" data-target="#myModal"> Edit profile</button>
+            {{!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"  data-toggle="modal" data-target="#myModal"><i class="fas  fa-sm text-white-50"></i> Edit your profile</a> --}}
           </div>
 
           <!-- Content Row -->
@@ -128,35 +129,46 @@
             <div class="card-body">
 
               <div class="table-responsive">
+                
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                   
-                    <tr>
-                       
-                     
-                      <th>Email</th>
-                     
-                         <th>User</th>
-                          <th>City</th>
-                           <th>State</th>
-                            <th>Mobile</th>
-                             
-                         
-                    </tr>
-                  </thead>
-                 
-                  <tbody>
-                  {{#each data}}
-                    <tr>
-                      <th>{{email}}</th>
-                       <th>{{username}}</th>
-                        <th>{{city}}</th>
-                       <th>{{state}}</th>
-                       <th>{{mobile}}</th>
-                      
+                   {{#each data}}
+                <tr>
 
-                     
-                    </tr> {{/each}}
+                    <th>Username</th>
+                    <th>{{username}}</th>
+
+                </tr>
+
+                    <tr>
+
+                    <th>Email</th>
+                    <th>{{email}}</th>
+
+                </tr>
+                
+                    <tr>
+
+                    <th>Mobile</th>
+                    <th>{{mobile}}</th>
+
+                </tr>
+                
+                    <tr>
+
+                    <th>State</th>
+                    <th>{{state}}</th>
+
+                </tr>
+                
+                    <tr>
+
+                    <th>City</th>
+                    <th>{{city}}</th>
+
+                </tr>
+                {{/each}}
                      
                   </tbody>
                 </table>
@@ -181,6 +193,7 @@
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>Copyright &copy; We Are Changer</span>
+            
           </div>
         </div>
       </footer>
