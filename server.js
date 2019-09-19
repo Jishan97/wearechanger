@@ -303,7 +303,16 @@ app.get('/logout',(req,res)=>{
         res.redirect('/adminP')
       })
 })
-
+app.get('/logoutU',(req,res)=>{
+    req.session.destroy(function(err) {
+        if(err) {
+            console.log(err);
+        }
+        console.log('sucessfully logout');
+    
+        res.redirect('/')
+      })
+})
 
 
 
