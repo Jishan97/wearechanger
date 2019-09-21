@@ -27,7 +27,7 @@ align-content: center;
 height: auto;
 margin-top: 50px;
 margin-bottom: auto;
-width: 450px;
+width: 600px;
 background-color: rgba(0,0,0,0.5) !important;
 }
 
@@ -128,7 +128,7 @@ margin-left: 4px;
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input name="username" type="text" class="form-control" placeholder="username">
+						<input name="username" type="text" class="form-control" placeholder="Username">
 						<input name="refer" type="hidden" value="{{para}}" class="form-control" placeholder="username" required>
 						
 					</div>
@@ -137,7 +137,7 @@ margin-left: 4px;
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input name="mobile" type="text" class="form-control" placeholder="mobile number" required>
+						<input name="mobile" type="text" class="form-control" placeholder="Mobile number" required>
 						
 					</div>
 
@@ -530,27 +530,48 @@ document.getElementById("year").innerHTML = options;
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input name="email" type="text" class="form-control" placeholder="email" pattern="+@.com" required>
+						<input name="email" type="text" class="form-control" placeholder="Email" pattern="+@.com" required>
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input name="password" type="password" class="form-control" placeholder="password" required>
+						<input name="password" type="password" class="form-control" placeholder="Password" required>
 					</div>
 
 		<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" name="password2" class="form-control" placeholder="confirm password" required>
+						<input type="password" name="password2" class="form-control" placeholder="Confirm Password" required>
 					</div>
+{{!-- <label style="color:whitesmoke" for="checkboc">Have referral code?</label>
+<input type="checkbox" name="checkbox" id="checkbox" value="scheckbox" />
+<br />
 
 
-					<div class="row align-items-center remember">
+<input id="showthis" name="showthis" size="50" type="text" placeholder="Enter your referral code here" value="" /> --}}
+
+
+<script>
+	  $(function () {
+        $('input[name="showthis"]').hide();
+
+        //show it when the checkbox is clicked
+        $('input[name="checkbox"]').on('click', function () {
+            if ($(this).prop('checked')) {
+                $('input[name="showthis"]').fadeIn();
+            } else {
+                $('input[name="showthis"]').hide();
+            }
+        });
+    });
+</script>
+					{{!-- <div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
-					</div>
+					</div> --}}
+					
 					<div class="form-group">
 						{{!-- <input type="submit" value="Login" class="btn float-right login_btn"> --}}
 						<button type="submit" class="btn float-right login_btn" style="color:white" >Register</button>
@@ -563,10 +584,15 @@ document.getElementById("year").innerHTML = options;
 				<div class="d-flex justify-content-center links">
 					Already having an account<a href="/">Login</a>
 				</div>
-				<div class="d-flex justify-content-center">
-					{{!-- <a href="#">Forgot your password?</a> --}}
-				</div>
+		<br>
+					<h6 class="text-center" style="color:white">© WeAreChanger.in	</h6>
 			</div>
 		</div>
 	</div>
+	<br>
+
+
+<br>
+<br>
+
 </div>

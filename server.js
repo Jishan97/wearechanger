@@ -74,6 +74,14 @@ app.use(express.static(__dirname + '/public'));
 
 
 
+ app.get('/loginTrial',(req,res)=>{
+   
+   res.render('loginTrial')
+})
+
+
+
+
 
 //all users
 app.get('/allusers',async(req,res)=>{
@@ -331,6 +339,7 @@ app.post('/register',async(req,res)=>{
     const state = req.body.state;
     const mobile = req.body.mobile;
     const gender = req.body.gender;
+    
    
     const pass2 = req.body.password2
 
@@ -628,6 +637,8 @@ console.log(totalA);
     //  console.log(data);
   
       const data1 = []
+      const pendingD=[]
+      const approvedD=[]
   
       data2.map((one)=>{
           if(one.accepted==='pending' && one.date===Current_Date) {
@@ -635,10 +646,26 @@ console.log(totalA);
           }
       })
 
+
+  data2.map((one)=>{
+      if(one.accepted==='pending') {
+          pendingD.push(one)
+      }
+  })
+  data2.map((one)=>{
+    if(one.accepted==='accepted') {
+        approvedD.push(one)
+    }
+})
+
+  const countPendingD = pendingD.length;
+  const countApprovedD = approvedD.length;
+
+
 // console.log('-----------------------------------------------------PENDING',data1)
 
     res.render('adminindex',{
-        data,totalA,session_n,data1
+        data,totalA,session_n,data1,countPendingD,countApprovedD
     }
     )
 })
@@ -1038,13 +1065,33 @@ app.post('/deleteMeetingFromDiss', (req, res) => {
     // `doc` is the document _before_ `update` was applied
      User.findOneAndUpdate(filter, update).then((result)=>{
          console.log(result)
-         res.redirect('/rejectedU')
+         res.redirect('/acceptedU')
      })
     
 
    
   })
 
+
+  
+app.post('/deleteMeeting', (req, res) => {
+    // var id = req.body.id;
+
+    const user = req.body.id;
+    console.log(user);
+  
+    const filter = { email: user };
+    const update = { accepted:'deleted' };
+    
+    // `doc` is the document _before_ `update` was applied
+     User.findOneAndUpdate(filter, update).then((result)=>{
+         console.log(result)
+         res.redirect('/todaysMeeting')
+     })
+    
+
+   
+  })
 
 
   app.post('/sendingEmailTodaysMeeting',(req,res)=>{
