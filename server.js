@@ -713,6 +713,7 @@ console.log(email)
 
 app.post('/register/:refer',(req,res)=>{
     req.session.session_name=req.body.email;
+    req.session.sessionedR=req.params.refer;
     const refer = req.params.refer;
     const name = req.body.username;
     const pass = req.body.password;
@@ -1566,6 +1567,7 @@ app.get('/moderatorP',(req,res)=>{
 
 
  app.get('/videoshow',(req,res)=>{
+     
      res.render('videoshowcase')
  })
 
