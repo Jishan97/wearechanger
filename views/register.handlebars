@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-image: url('https://res.cloudinary.com/jishan/image/upload/v1569135041/optimized-2eat.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: auto;
@@ -110,8 +110,9 @@ margin-left: 4px;
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 				<img src="https://res.cloudinary.com/jishan/image/upload/v1568556656/logo_transparent.png" height="200" width="200"  class="mx-auto d-block"   alt="">
-			{{!-- <div class="card-header"> --}}
-				{{!-- <h4 style="color:white">Registration</h4> --}}
+			<div class="card-header">
+			<h5  style="color:white;font-family: 'Concert One', cursive;" class="text-center" >We Are Changer</h5>
+					<h5 style="color:white;font-family: 'Concert One', cursive;" class="text-center" >Change your life</h5>
 				
 								                {{#if message}}
 <div class="alert alert-danger">{{message}}</div>
@@ -121,7 +122,7 @@ margin-left: 4px;
 					<span><i class="fab fa-google-plus-square"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>
 				</div> --}}
-			{{!-- </div> --}}
+			</div>
 			<div class="card-body">
 				<form method="POST" action="/register"> 
 					<div  class="input-group form-group">
@@ -546,13 +547,17 @@ document.getElementById("year").innerHTML = options;
 						</div>
 						<input type="password" name="password2" class="form-control" placeholder="Confirm Password" required>
 					</div>
-{{!-- <label style="color:whitesmoke" for="checkboc">Have referral code?</label>
+<label style="color:whitesmoke" for="checkboc">Have referral code?</label>
 <input type="checkbox" name="checkbox" id="checkbox" value="scheckbox" />
 <br />
 
 
-<input id="showthis" name="showthis" size="50" type="text" placeholder="Enter your referral code here" value="" /> --}}
 
+
+		<div class="input-group form-group">
+				<input id="showthis" name="showthis" size="30" type="text" placeholder="Enter your referral code here" />
+						
+					</div>
 
 <script>
 	  $(function () {

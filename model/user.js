@@ -40,8 +40,7 @@ const userschema = new Schema({
  },
 
  reference:{
-     type:String,
-     default:'N/A'
+     type:String
  },
  profession:{
     type:String,

@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-image: url('https://res.cloudinary.com/jishan/image/upload/v1569135041/optimized-2eat.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -111,9 +111,10 @@ margin-left: 4px;
 	<div class="d-flex justify-content-center h-100">
 	
 		<div class="card">
-			<img src="https://res.cloudinary.com/jishan/image/upload/v1568556656/logo_transparent.png" height="200" width="200"  class="mx-auto d-block"   alt="">
-			{{!-- <div class="card-header"> --}}
-				{{!-- <h3>Login</h3> --}}
+			<img  src="https://res.cloudinary.com/jishan/image/upload/v1568556656/logo_transparent.png" height="200" width="200"  class="mx-auto d-block img-fluid"   alt="">
+			<div class="card-header">
+				<h5  style="color:white;font-family: 'Concert One', cursive;" class="text-center" >We Are Changer</h5>
+					<h5 style="color:white;font-family: 'Concert One', cursive;" class="text-center" >Change your life</h5>
 				                {{#if message}}
 <div class="alert alert-danger">{{message}}</div>
 {{/if}}
@@ -122,7 +123,7 @@ margin-left: 4px;
 					<span><i class="fab fa-google-plus-square"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>
 				</div> --}}
-			{{!-- </div> --}}
+			</div>
 			<div class="card-body">
 				<form method="POST" action="/login"> 
 				
@@ -137,7 +138,7 @@ margin-left: 4px;
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input name="password" type="password" class="form-control" placeholder="assword" required>
+						<input name="password" type="password" class="form-control" placeholder="Password" required>
 					</div>
 
 

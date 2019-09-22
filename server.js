@@ -339,23 +339,19 @@ app.post('/register',async(req,res)=>{
     const state = req.body.state;
     const mobile = req.body.mobile;
     const gender = req.body.gender;
-    
-   
     const pass2 = req.body.password2
+    const pass = req.body.password;   
 
- 
-    const pass = req.body.password;
+    const reference1 = req.body.showthis;
     
+
     const fetchD = await User.find({email})
     const fetchD1 = await User.find({username})
-
 
 if(pass!=pass2) {
     req.flash('message','password not match')
     res.redirect('/resgistrationP')
 }
-
-
 
 
   else if(fetchD.length>1) {
@@ -367,10 +363,133 @@ if(pass!=pass2) {
     req.flash('message','username already exits')
     res.redirect('/resgistrationP')
   }
+ 
+
+  else if(reference1==='' && reference==='') {
+    const reference='kushpal'
+    console.log(reference1);
+var user = new User({
+    username:username,
+    email:email,
+   password:pass,
+   city,
+   age,
+   state,
+   mobile,
+   gender,
+   reference
+});
+user.save()
+.then((result)=>{
+ //  console.log(result)
+   // res.send(result)
+   res.render('videoshowcase')
+})
+const msg = []
+const data = await defaultMsg.find({})
+console.log(data)
+
+data.map((one)=>{
+   msg.push(one.msg)
+})
+
+console.log(msg[0])
+ //target user
+
+
+ //nodemailer process starts
+
+ var transporter = nodemailer.createTransport({
+     service: 'gmail',
+     auth: {
+       user: 'wearechanger@gmail.com',
+       pass: '7404225687Dd'
+     }
+   });
+   
+   var mailOptions = {
+     from: 'wearechanger@gmail.com',
+     to: email,
+     subject: 'We are changers',
+     text: msg[0]
+   };
+   
+   transporter.sendMail(mailOptions, function(error, info){
+     if (error) {
+       console.log(error);
+     } else {
+       console.log('Email sent: ' + info.response);
+     }
+   });
+
+
+
+
+
+}
+        else if(reference==='' ) {
+                console.log(reference1);
+            var user = new User({
+                username:username,
+                email:email,
+               password:pass,
+               city,
+               age,
+               state,
+               mobile,
+               gender,
+               reference:reference1
+           });
+           user.save()
+           .then((result)=>{
+             //  console.log(result)
+               // res.send(result)
+               res.render('videoshowcase')
+           })
+           const msg = []
+           const data = await defaultMsg.find({})
+           console.log(data)
+         
+           data.map((one)=>{
+               msg.push(one.msg)
+           })
+         
+           console.log(msg[0])
+             //target user
+         
+         
+             //nodemailer process starts
+         
+             var transporter = nodemailer.createTransport({
+                 service: 'gmail',
+                 auth: {
+                   user: 'wearechanger@gmail.com',
+                   pass: '7404225687Dd'
+                 }
+               });
+               
+               var mailOptions = {
+                 from: 'wearechanger@gmail.com',
+                 to: email,
+                 subject: 'We are changers',
+                 text: msg[0]
+               };
+               
+               transporter.sendMail(mailOptions, function(error, info){
+                 if (error) {
+                   console.log(error);
+                 } else {
+                   console.log('Email sent: ' + info.response);
+                 }
+               });
+
+
+        }
+
 
 else{
 
-
+   
 
   var user = new User({
          username:username,
