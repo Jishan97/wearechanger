@@ -129,12 +129,38 @@ margin-left: 4px;
 
 					<h3 style="color:white"><a class="btn btn-info mx-auto d-block" style="width:300px" href="/meetingP">Book a meeting now</a>  </h3>
 
+
+       {{#ifeq reference 'kushpal'}}
+		<div class="row">
+						<div class="col-sm-12 text-center ">
+							
+	<p  style="color:white">if any queries contact at  <span style="color:tomato">7404225687</span></p> 
+
+				
+						</div>
+		</div>
+
+{{/ifeq}}
+
+
 					<div class="row">
 						<div class="col-sm-12 text-center ">
 							
-	<p  style="color:white">if any queries contact us at  <span style="color:tomato">7404225687</span> </p>
+	
+
 				
 						</div>
+				
+						{{#each dataR}}
+						<p  style="color:white">if any queries contact at </p>
+<div class="col-sm-12 text-center ">
+<p style="color:white">Email: <span style="color:tomato">{{email}}</span> </p>
+</div>
+
+<div class="col-sm-12 text-center ">
+<p style="color:white">Mobile:<span style="color:tomato">{{mobile}}</span></p>
+</div>
+	{{/each}}
 					</div>
 					
 				        

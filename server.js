@@ -383,7 +383,9 @@ user.save()
 .then((result)=>{
  //  console.log(result)
    // res.send(result)
-   res.render('videoshowcase')
+   res.render('videoshowcase',{
+    reference
+   })
 })
 const msg = []
 const data = await defaultMsg.find({})
@@ -427,6 +429,8 @@ console.log(msg[0])
 
 
 }
+
+
         else if(reference==='' ) {
                 console.log(reference1);
             var user = new User({
@@ -444,7 +448,14 @@ console.log(msg[0])
            .then((result)=>{
              //  console.log(result)
                // res.send(result)
-               res.render('videoshowcase')
+            //    res.render('videoshowcase')
+           })
+
+           const dataR = await User.find({username:reference1})
+
+
+           res.render('videoshowcase',{
+            dataR
            })
            const msg = []
            const data = await defaultMsg.find({})
@@ -510,9 +521,14 @@ else{
     .then((result)=>{
       //  console.log(result)
         // res.send(result)
-        res.render('videoshowcase')
+        // res.render('videoshowcase')
     })
+    const dataR = await User.find({username:reference})
 
+
+    res.render('videoshowcase',{
+     dataR
+    })
 
     /////////////////////////////////// after registration send email  
 
