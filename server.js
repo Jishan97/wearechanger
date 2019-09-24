@@ -384,7 +384,7 @@ user.save()
  //  console.log(result)
    // res.send(result)
    res.render('videoshowcase',{
-    reference
+    reference,username,mobile,email,state,city
    })
 })
 const msg = []
@@ -455,7 +455,7 @@ console.log(msg[0])
 
 
            res.render('videoshowcase',{
-            dataR
+            dataR,username,mobile,email,state,city
            })
            const msg = []
            const data = await defaultMsg.find({})
@@ -527,7 +527,7 @@ else{
 
 
     res.render('videoshowcase',{
-     dataR
+     dataR,username,mobile,email,state,city
     })
 
     /////////////////////////////////// after registration send email  

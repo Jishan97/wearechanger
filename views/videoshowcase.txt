@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -28,7 +28,7 @@ height: auto;
 margin-top: auto;
 margin-bottom: auto;
 width: 600px;
-
+background-color: rgba(0,0,0,0.5) !important;
 }
 
 .social_icon span{
@@ -105,34 +105,16 @@ margin-left: 4px;
 
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
-     <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
-   <a class="navbar-brand" href="/trailDashboard">
-    <img src="http://res.cloudinary.com/jishan/image/upload/c_scale,w_1200/v1568698568/logo_transparent.png" alt="Logo" style="width:40px;">
-  </a>
-  
-  
-   <span style="color:white" class="navbar-text">
-    We are changer
-  </span>
-   <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="logoutU"> Logout</a>
-    </li>
- 
-  </ul>
-   
-</nav>
+
 <div class="container">
-	
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
-							{{!-- <img src="https://res.cloudinary.com/jishan/image/upload/v1568556656/logo_transparent.png" height="150" width="150"  class="mx-auto d-block"   alt=""> --}}
-  
-<br>
-<br>
+							<img src="https://res.cloudinary.com/jishan/image/upload/v1568556656/logo_transparent.png" height="150" width="150"  class="mx-auto d-block"   alt="">
+
+
 			<div style="padding-top:0%" class="card-body">
 				
-			{{!-- <h5  style="color:white;font-family: 'Concert One', cursive;" class="text-center" >We Are Changer</h5> --}}
+			<h5  style="color:white;font-family: 'Concert One', cursive;" class="text-center" >We Are Changer</h5>
 
 			<div class="embed-responsive embed-responsive-21by9">
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3wi65UW_nJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -140,69 +122,19 @@ margin-left: 4px;
          </div>
 
 <br>
-		<div class="col-sm-12 text-center ">
-							
-	<h5  style="color:black">Hello {{username}}</h5> 
 
-				
-						</div>
-						<br>
-<div class="table-responsive">
-                
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                  
-               
-                <tr>
 
-                    <th>Username</th>
-                    <th>{{username}}</th>
-
-                </tr>
-
-                    <tr>
-
-                    <th>Email</th>
-                    <th>{{email}}</th>
-
-                </tr>
-                
-                    <tr>
-
-                    <th>Mobile</th>
-                    <th>{{mobile}}</th>
-
-                </tr>
-                
-                    <tr>
-
-                    <th>State</th>
-                    <th>{{state}}</th>
-
-                </tr>
-                
-                    <tr>
-
-                    <th>City</th>
-                    <th>{{city}}</th>
-
-                </tr>
-              
-                     
-                  </tbody>
-                </table>
-              </div>
 <div class="form-group">
 						{{!-- <input type="submit" value="Login" class="btn  float-right login_btn"> --}}
 
-					<h3 style="color:rgb(182, 176, 176)"><a class="btn btn-info mx-auto d-block" style="width:300px" href="/meetingP">Book a meeting now</a>  </h3>
+					<h3 style="color:white"><a class="btn btn-info mx-auto d-block" style="width:300px" href="/meetingP">Book a meeting now</a>  </h3>
 
 
        {{#ifeq reference 'kushpal'}}
 		<div class="row">
 						<div class="col-sm-12 text-center ">
 							
-	<h6  style="color:black">if any queries contact at  <span style="color:tomato">7404225687</span></h6> 
+	<p  style="color:white">if any queries contact at  <span style="color:tomato">7404225687</span></p> 
 
 				
 						</div>
@@ -215,14 +147,14 @@ margin-left: 4px;
 					<div class="row">
 						<div class="col-sm-12 text-center ">
 							
-	<h6  style="color:black">if any queries contact at </h6>
+	<p  style="color:white">if any queries contact at </p>
 
 				<div class="col-sm-12 text-center ">
-<h6 style="color:black">Email: <span style="color:tomato">{{email}}</span> </h6>
+<p style="color:white">Email: <span style="color:tomato">{{email}}</span> </p>
 </div>
 
 <div class="col-sm-12 text-center ">
-<h6 style="color:black">Mobile:<span style="color:tomato">{{mobile}}</span></h6>
+<p style="color:white">Mobile:<span style="color:tomato">{{mobile}}</span></p>
 </div>
 	{{/each}}
 						</div>

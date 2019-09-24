@@ -129,7 +129,7 @@ margin-left: 4px;
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input name="username" type="text" class="form-control" placeholder="Username">
+						<input name="username" type="text" class="form-control" placeholder="Username" required>
 						<input name="refer" type="hidden" value="{{para}}" class="form-control" placeholder="username" required>
 						
 					</div>
@@ -151,6 +151,7 @@ margin-left: 4px;
     <option>Gender</option>
     <option>Male</option>
     <option>Female</option>
+	<option>Other</option>
     {{!-- <option>4</option> --}}
   </select>
 					</div>
@@ -239,7 +240,7 @@ document.getElementById("year").innerHTML = options;
 						</div>
 						{{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
 						  <select class="form-control" name="state" id="sel1" required>
-     <option selected="selected">-Select State-</option>
+     <option value="">-Select State-</option>
    <option value="Andhra Pradesh">Andhra Pradesh</option>
 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
 <option value="Assam">Assam</option>
@@ -289,7 +290,7 @@ document.getElementById("year").innerHTML = options;
 						</div>
 						
 						 <select class="form-control" name="city" id="sel1" required>
-							 <option selected="selected">-Select City-</option>
+							 <option value="">-Select City-</option>
 <option disabled="disabled" style="background-color:#3E3E3E"><font color="#000000"><i>-Top Metropolitan Cities-</i></font></option>
 <option>Ahmedabad</option>
 <option>Bengaluru/Bangalore</option>

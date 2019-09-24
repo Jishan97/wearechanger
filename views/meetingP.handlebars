@@ -134,13 +134,13 @@ margin-left: 4px;
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-            <select class="form-control" name="education" id="sel1">
-            <option>Enter your education education</option>
-            <option>10th(Matric)</option>
-             <option>12th(Intermediate)</option>
-             <option>Graduated</option>
-              <option>Master</option>
-               <option>PHP</option>
+            <select class="form-control" name="education" id="sel1" required>
+            <option value="">Enter your education education</option>
+            <option value="10th(Matric)">10th(Matric)</option>
+             <option value="12th(Intermediate)">12th(Intermediate)</option>
+             <option value="Graduated">Graduated</option>
+              <option value="Master">Master</option>
+               <option value="PHD">PHD</option>
         
             </select>
             </div>
@@ -156,12 +156,12 @@ margin-left: 4px;
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-            <select class="form-control" name="profession" id="sel1">
-            <option>Enter your profession</option>
-            <option>Fresher</option>
-            <option>Job</option>
-            <option>Business</option>
-            <option>Other</option>
+            <select class="form-control" name="profession" id="sel1" required>
+            <option value="">Enter your profession</option>
+            <option value="fresher">Fresher</option>
+            <option value="job">Job</option>
+            <option value="bussiness">Business</option>
+            <option value="other">Other</option>
             </select>
             </div>
 <div class="input-group form-group">
@@ -176,11 +176,11 @@ margin-left: 4px;
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-            <select class="form-control" name="experience" id="sel1">
-            <option>Enter your experience</option>
-            <option>0-5yr</option>
-            <option>5-10yr</option>
-            <option>10yr+</option>
+            <select class="form-control" name="experience" id="sel1" required>
+            <option value="">Enter your experience</option>
+            <option value="0-5yr">0-5yr</option>
+            <option value="5-10yr">5-10yr</option>
+            <option value="10yr+">10yr+</option>
             </select>
             </div>
 
@@ -193,7 +193,7 @@ margin-left: 4px;
  
 
  <input type="date" name="date" max="3000-12-31" 
-        min="1000-01-01" class="form-control">
+        min="1000-01-01" class="form-control" required>
 
 
             </div>
@@ -205,7 +205,7 @@ margin-left: 4px;
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-            <select class="form-control" name="question" id="sel1">
+            <select class="form-control" name="question" id="sel1" required>
             <option>yes</option>
             <option>no</option>
           
