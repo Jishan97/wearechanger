@@ -26,17 +26,17 @@ const userschema = new Schema({
 
 
     email:{
-        type:String,
-        required:true
+        type:String
+      
     },
 
   username:{
-    type:String,
-    required:true
+    type:String
+   
   },
  password:{
-     type:String,
-     required:true
+     type:String
+     
  },
 
  reference:{
