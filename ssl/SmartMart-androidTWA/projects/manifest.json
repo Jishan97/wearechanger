@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "SmartMart",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://frozen-savannah-24909.herokuapp.com/",
+    "short_name": "SmartMart",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
+}

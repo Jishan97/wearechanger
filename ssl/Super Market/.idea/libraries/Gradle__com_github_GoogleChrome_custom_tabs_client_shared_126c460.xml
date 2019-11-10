@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.GoogleChrome.custom-tabs-client:shared-126c460">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/shared-126c460.aar/95ae44ea9f65031df253683dc808cdd8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/shared-126c460.aar/95ae44ea9f65031df253683dc808cdd8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.GoogleChrome.custom-tabs-client/shared/126c460/81adc0530edb53a041fd6620a911d62dd87adee8/shared-126c460-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

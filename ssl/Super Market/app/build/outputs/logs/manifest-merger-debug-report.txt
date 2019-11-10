@@ -1,0 +1,142 @@
+-- Merging decision tree log ---
+application
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:25:5-54:19
+MERGED from [com.github.GoogleChrome.custom-tabs-client:customtabs:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\customtabs-126c460.aar\561fcd05bb64d4fb4895bfa4e135297f\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.GoogleChrome.custom-tabs-client:customtabs:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\customtabs-126c460.aar\561fcd05bb64d4fb4895bfa4e135297f\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.GoogleChrome.custom-tabs-client:shared:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\shared-126c460.aar\95ae44ea9f65031df253683dc808cdd8\AndroidManifest.xml:26:5-20
+MERGED from [com.github.GoogleChrome.custom-tabs-client:shared:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\shared-126c460.aar\95ae44ea9f65031df253683dc808cdd8\AndroidManifest.xml:26:5-20
+	android:supportsRtl
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:29:9-35
+	android:label
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:28:9-40
+	android:icon
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:27:9-43
+	android:allowBackup
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:26:9-35
+	android:theme
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:30:9-47
+meta-data#asset_statements
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:32:9-34:50
+	android:value
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:34:13-47
+	android:name
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:33:13-44
+activity#android.support.customtabs.trusted.LauncherActivity
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:36:9-53:20
+	android:label
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:37:13-44
+	android:name
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:36:19-85
+meta-data#android.support.customtabs.trusted.DEFAULT_URL
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:38:13-39:49
+	android:value
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:39:17-46
+	android:name
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:38:24-85
+data
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:50:17-51:49
+	android:host
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:51:21-47
+	android:scheme
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:50:23-45
+manifest
+ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+MERGED from [com.github.GoogleChrome.custom-tabs-client:customtabs:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\customtabs-126c460.aar\561fcd05bb64d4fb4895bfa4e135297f\AndroidManifest.xml:17:1-25:12
+MERGED from [com.github.GoogleChrome.custom-tabs-client:shared:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\shared-126c460.aar\95ae44ea9f65031df253683dc808cdd8\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f073b03ec9d1de31e64120a63a828eb0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\72fad336523fac6d4a62ced9ab251b5b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\67f0c4ddafdc4728982495036baba759\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\88ed3f5ae7d742a7881067c0966c5dfa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\9d59384bd3769f0f25936fea80e20302\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\c7a7046ecf2ff204d6add6fe170a9dac\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\b574cc4d6b41ee85fbfa5f5ace68769f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\abfb437f21abbe8497ccbc97c8032ecc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\12feb020c36e678c9d6559c6716189db\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b7c1406012823189340cb999db492950\AndroidManifest.xml:17:1-24:12
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+	package
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:23:5-30
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:1-55:12
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:22:11-69
+uses-sdk
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+MERGED from [com.github.GoogleChrome.custom-tabs-client:customtabs:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\customtabs-126c460.aar\561fcd05bb64d4fb4895bfa4e135297f\AndroidManifest.xml:20:5-44
+MERGED from [com.github.GoogleChrome.custom-tabs-client:customtabs:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\customtabs-126c460.aar\561fcd05bb64d4fb4895bfa4e135297f\AndroidManifest.xml:20:5-44
+MERGED from [com.github.GoogleChrome.custom-tabs-client:shared:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\shared-126c460.aar\95ae44ea9f65031df253683dc808cdd8\AndroidManifest.xml:22:5-24:41
+MERGED from [com.github.GoogleChrome.custom-tabs-client:shared:126c460] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\shared-126c460.aar\95ae44ea9f65031df253683dc808cdd8\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f073b03ec9d1de31e64120a63a828eb0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\f073b03ec9d1de31e64120a63a828eb0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\72fad336523fac6d4a62ced9ab251b5b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\72fad336523fac6d4a62ced9ab251b5b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\67f0c4ddafdc4728982495036baba759\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\67f0c4ddafdc4728982495036baba759\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\88ed3f5ae7d742a7881067c0966c5dfa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\88ed3f5ae7d742a7881067c0966c5dfa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\9d59384bd3769f0f25936fea80e20302\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\9d59384bd3769f0f25936fea80e20302\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\c7a7046ecf2ff204d6add6fe170a9dac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\c7a7046ecf2ff204d6add6fe170a9dac\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\b574cc4d6b41ee85fbfa5f5ace68769f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\b574cc4d6b41ee85fbfa5f5ace68769f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\abfb437f21abbe8497ccbc97c8032ecc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\abfb437f21abbe8497ccbc97c8032ecc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\12feb020c36e678c9d6559c6716189db\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\12feb020c36e678c9d6559c6716189db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b7c1406012823189340cb999db492950\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\Jishan\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\b7c1406012823189340cb999db492950\AndroidManifest.xml:20:5-22:41
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+		INJECTED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:41:13-44:29
+action#android.intent.action.MAIN
+ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:42:17-69
+	android:name
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:42:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:43:17-77
+	android:name
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:43:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:xyz.appmaker.hcgxoc+data:scheme:https
+ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:46:13-52:29
+action#android.intent.action.VIEW
+ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:47:17-68
+	android:name
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:47:25-66
+category#android.intent.category.DEFAULT
+ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:48:17-76
+	android:name
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:48:27-73
+category#android.intent.category.BROWSABLE
+ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:49:17-77
+	android:name
+		ADDED from E:\wearechanger\ssl\Super Market\app\src\main\AndroidManifest.xml:49:27-75

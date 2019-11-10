@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SmartMart</string>
+    <string name="app_url">https://frozen-savannah-24909.herokuapp.com/</string>
+    <string name="asset_statements">
+        [{
+            \"relation\": [\"delegate_permission/common.handle_all_urls\"],
+            \"target\": {
+                \"namespace\": \"web\",
+                \"site\": \"start_url\"}
+        }]
+    </string>
+    <string name="app_host">frozen-savannah-24909.herokuapp.com/</string>
+</resources>

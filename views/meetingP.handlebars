@@ -11,8 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
-background-size: cover;
+
 background-repeat: no-repeat;
 height: auto;
 font-family: 'Numans', sans-serif;
@@ -106,35 +105,58 @@ margin-left: 4px;
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+   <a class="navbar-brand" href="/trailDashboard">
+    <img src="http://res.cloudinary.com/jishan/image/upload/c_scale,w_1200/v1568698568/logo_transparent.png" alt="Logo" style="width:40px;">
+  </a>
+  
+  
+   <span style="color:white" class="navbar-text">
+    We are changer
+  </span>
+   <ul class="navbar-nav">
+   
+ 
+  </ul>
+   
+</nav>
+<br>
+<br>
+			<form method="POST" action="/meetingD"> 
 <div class="container">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h5 style="color:white">Book a meeting now to get free consultation!</h5 style="color:white">
-                {{#if message}}
+                    {{#if message}}
 <div class="alert alert-danger">{{message}}</div>
 {{/if}}
-				{{!-- <div class="d-flex justify-content-end social_icon">
-					<span><i class="fab fa-facebook-square"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
-					<span><i class="fab fa-twitter-square"></i></span>
-				</div> --}}
-			</div>
-			<div class="card-body">
-				<form method="POST" action="/meetingD"> 
-				<div class="input-group form-group">
-						<div class="input-group-prepend">
-						
-						</div>
-					<label style="color:white" for="education">Your education</label>
-					</div>
+    <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 text-center">
 
-   <div class="input-group form-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-            </div>
-            {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-            <select class="form-control" name="education" id="sel1" required>
+
+
+
+
+        
+        <h5 style="color:black">Book a meeting now to get free consultation!</h5 style="color:white">
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><label style="color:black" for="profession">Your Profession</label></th>
+        <th>      <select class="form-control" name="profession" id="sel1" required>
+            <option value="">Enter your profession</option>
+            <option value="fresher">Fresher</option>
+            <option value="job">Job</option>
+            <option value="bussiness">Business</option>
+            <option value="other">Other</option>
+            </select></th>
+      </tr>
+
+
+        <tr>
+            <th>
+	<label style="color:black" for="education">Your education</label>
+            </th>
+               <th> 
+                         <select class="form-control" name="education" id="sel1" required>
             <option value="">Enter your education education</option>
             <option value="10th(Matric)">10th(Matric)</option>
              <option value="12th(Intermediate)">12th(Intermediate)</option>
@@ -143,92 +165,68 @@ margin-left: 4px;
                <option value="PHD">PHD</option>
         
             </select>
-            </div>
+               </th>
+        </tr>
 
-	<div class="input-group form-group">
-						<div class="input-group-prepend">
-						
-						</div>
-					<label style="color:white" for="profession">Your Profession</label>
-					</div>
-               <div class="input-group form-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-            </div>
-            {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-            <select class="form-control" name="profession" id="sel1" required>
-            <option value="">Enter your profession</option>
-            <option value="fresher">Fresher</option>
-            <option value="job">Job</option>
-            <option value="bussiness">Business</option>
-            <option value="other">Other</option>
-            </select>
-            </div>
-<div class="input-group form-group">
-						<div class="input-group-prepend">
-						
-						</div>
-					<label style="color:white" for="experience">Your Experience</label>
-					</div>
-
-   <div class="input-group form-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-            </div>
-            {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-            <select class="form-control" name="experience" id="sel1" required>
+    <tr>
+            <th>
+<label style="color:black" for="experience">Your Experience</label>
+            </th>
+               <th> 
+             <select class="form-control" name="experience" id="sel1" required>
             <option value="">Enter your experience</option>
             <option value="0-5yr">0-5yr</option>
             <option value="5-10yr">5-10yr</option>
             <option value="10yr+">10yr+</option>
             </select>
-            </div>
-
-<label style="color:white" for="date">Book a meeting</label>
-   <div class="input-group form-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-            </div>
-            {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
- 
-
+               </th>
+        </tr>
+  
+    <tr>
+            <th>
+<label style="color:black" for="date">Book a meeting</label>
+            </th>
+               <th> 
+            
  <input type="date" name="date" max="3000-12-31" 
         min="1000-01-01" class="form-control" required>
+               </th>
+        </tr>
 
-
-            </div>
-
-
-<label style="color:white"or="question">Are you interested to visit our office for meeting</label>
-<div class="input-group form-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-            </div>
-            {{!-- <input name="mobile" type="text" class="form-control" placeholder="mobile number"> --}}
-            <select class="form-control" name="question" id="sel1" required>
+    <tr>
+            <th>
+<label style="color:black"or="question">Are you interested to visit our office for meeting</label>
+            </th>
+               <th> 
+        <select class="form-control" name="question" id="sel1" required>
             <option>yes</option>
             <option>no</option>
           
             </select>
-            </div>
+               </th>
+        </tr>
 
-<div class="form-group">
-						{{!-- <input type="submit" value="Login" class="btn  float-right login_btn"> --}}
 
-						<button type="submit" class="btn justify-content-center mx-auto d-block login_btn" style="color:white" >Book</button>
-                        		<div class="row">
-						<div class="col-sm-12 text-center ">
-							{{!-- <br>	<p  style="color:white">if any queries contact us at  <span style="color:tomato">7404225687</span> </p> --}}
-				
-						</div>
-					</div>
-					
-					</div>
-                                 {{!-- <h5 style="color:white">Already booked meeting check your  <a class="btn btn-info" href="/userDashboard">dashboard</a> </h5>   --}}
-				
-				</form>
-			</div>
-			
-		</div>
-	</div>
+    </thead>
+  </table>
+
+    </div>
+    <div class="col-sm-2"></div>
 </div>
+
+
+
+  <div class="row">
+      <div class="col-sm-12">
+    <button type="submit" class="btn justify-content-center mx-auto d-block login_btn" style="color:white" >Book</button>
+
+      </div>
+  </div>
+</form>
+
+</div>
+
+
+  
+
+
