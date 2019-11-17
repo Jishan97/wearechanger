@@ -68,6 +68,10 @@ education:{
 accepted:{
     type:String,
     default:'pending'
+},
+bookedMeeting:{
+    type:String,
+    default:'no'
 }
 
 });

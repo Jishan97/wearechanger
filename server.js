@@ -278,6 +278,7 @@ app.post('/meetingD', async (req, res) => {
   const experince = req.body.experince;
   const date = req.body.date;
   const question = req.body.question;
+  const bookedMeeting = 'yes';
 
   const meeting = new Meeting({
     email: email,
@@ -310,7 +311,8 @@ app.post('/meetingD', async (req, res) => {
     profession,
     experince,
     date,
-    question
+    question,
+    bookedMeeting
   };
 
   // `doc` is the document _before_ `update` was applied
@@ -405,6 +407,9 @@ app.post('/register', async (req, res) => {
   } else if (fetchD1.length > 1) {
     req.flash('message', 'username already exits')
     res.redirect('/resgistrationP')
+
+
+    
   } else if (reference1 === '' && reference === '') {
     const reference = 'kushpal'
     console.log(reference1);
@@ -696,7 +701,13 @@ app.post('/login', async (req, res) => {
       if (one.email === email && one.accepted === 'accepted') {
 
         res.redirect('/userDashboard')
-      } else {
+      }
+
+      if(one.bookedMeeting === 'yes') {
+        res.redirect('/userDashboard')
+      }
+      
+      else {
         req.flash('message', 'sucessfull')
         res.redirect('/meetingP')
       }
