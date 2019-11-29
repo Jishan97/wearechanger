@@ -409,7 +409,7 @@ app.post('/register', async (req, res) => {
     res.redirect('/resgistrationP')
 
 
-    
+
   } else if (reference1 === '' && reference === '') {
     const reference = 'kushpal'
     console.log(reference1);
@@ -703,11 +703,9 @@ app.post('/login', async (req, res) => {
         res.redirect('/userDashboard')
       }
 
-      if(one.bookedMeeting === 'yes') {
-        res.redirect('/userDashboard')
-      }
-      
-      else {
+      if (one.bookedMeeting === 'yes') {
+        res.redirect('/trailDashboard')
+      } else {
         req.flash('message', 'sucessfull')
         res.redirect('/meetingP')
       }
