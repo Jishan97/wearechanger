@@ -136,7 +136,7 @@
             </div>
             <div class="card-body">
 
-              <div class="table-responsive text-center">
+              <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     {{#each data}}
@@ -205,8 +205,23 @@
          
                 </table>
                              {{#each data}}
-          <p style="color:black;margin-bottom:0px">your referred link is <br> <span style="color:tomato"> http://account.wearechanger.in/resgistrationP/{{username}} </span></p>
-          <a href="https://wa.me/?text=https://ancient-forest-89719.herokuapp.com/resgistrationP/{{username}} "><i style="font-size:30px;color:darkgreen" class="fab fa-whatsapp"></i></a>
+          <p class="text-center" style="color:black;margin-bottom:0px">your referred link is <br> 
+          <span class="textPP text-center"  style="color:tomato"> http://account.wearechanger.in/resgistrationP/{{username}}
+          </span>
+          <button class="btn btn-primary text-center" onclick="copyToClipboard('.textPP')">copy link</button></p>
+          <script>
+ function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+    alert("Copied, Now share the link ");
+}
+
+          </script>
+          
+          {{!-- <a class="text-center" href="https://wa.me/?text=https://ancient-forest-89719.herokuapp.com/resgistrationP/{{username}} "><i style="font-size:30px;color:darkgreen" class="fab fa-whatsapp"></i></a> --}}
 
           
           {{/each}} 
