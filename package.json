@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "alert-node": "^2.0.0",
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
